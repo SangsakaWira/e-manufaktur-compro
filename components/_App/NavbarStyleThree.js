@@ -34,7 +34,7 @@ const NavbarStyleThree = () => {
             <div id="navbar" className="navbar-area navbar-style-two fixed-top">
                 <div className="main-navbar">
                     <div className="container">
-                        <nav className="navbar navbar-expand-lg navbar-light">
+                    <nav className="navbar navbar-expand-lg navbar-light">
                             <Link href="/">
                                 <a className="navbar-brand">
                                     <img
@@ -67,20 +67,11 @@ const NavbarStyleThree = () => {
                                                 Home <i className="ri-arrow-down-s-line"></i>
                                             </a>
                                         </Link>
+
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
                                                 <Link href="/" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 1</a>
-                                                </Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link href="/index-2" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 2</a>
-                                                </Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link href="/index-3" activeClassName="active">
-                                                    <a onClick={toggleNavbar} className="nav-link">Home Demo - 3</a>
+                                                    <a onClick={toggleNavbar} className="nav-link">Home</a>
                                                 </Link>
                                             </li>
                                         </ul>
@@ -89,38 +80,13 @@ const NavbarStyleThree = () => {
                                     <li className="nav-item megamenu">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                Pages <i className="ri-arrow-down-s-line"></i>
+                                                About Us <i className="ri-arrow-down-s-line"></i>
                                             </a>
                                         </Link>
                                         <ul className="dropdown-menu">
                                             <li>
                                                 <Link href="/about" activeClassName="active">
                                                     <a onClick={toggleNavbar}>About</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/pricing" activeClassName="active">
-                                                    <a onClick={toggleNavbar}>Pricing</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/team" activeClassName="active">
-                                                    <a onClick={toggleNavbar}>Team</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/gallery" activeClassName="active">
-                                                    <a onClick={toggleNavbar}>Gallery</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/appointment" activeClassName="active">
-                                                    <a onClick={toggleNavbar}>Appointment</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/testimonials" activeClassName="active">
-                                                    <a onClick={toggleNavbar}>Testimonials</a>
                                                 </Link>
                                             </li>
                                             <li>
@@ -132,7 +98,7 @@ const NavbarStyleThree = () => {
                                             <li className="nav-item">
                                                 <Link href="#">
                                                     <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                        Career <i className="ri-arrow-right-s-line"></i>
+                                                        Partners <i className="ri-arrow-right-s-line"></i>
                                                     </a>
                                                 </Link>
                                                 <ul className="dropdown-menu">
@@ -141,7 +107,6 @@ const NavbarStyleThree = () => {
                                                             <a onClick={toggleNavbar} className="nav-link">Career</a>
                                                         </Link>
                                                     </li> 
-
                                                     <li className="nav-item">
                                                         <Link href="/career-details" activeClassName="active">
                                                             <a onClick={toggleNavbar} className="nav-link">Career Details</a>
@@ -195,6 +160,26 @@ const NavbarStyleThree = () => {
                                     <li className="nav-item">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
+                                                Products <i className="ri-arrow-down-s-line"></i>
+                                            </a>
+                                        </Link>
+                                        <ul className="dropdown-menu">
+                                            <li className="nav-item">
+                                                <Link href="/services" activeClassName="active">
+                                                    <a onClick={toggleNavbar} className="nav-link">Products</a>
+                                                </Link>
+                                            </li> 
+                                            <li className="nav-item">
+                                                <Link href="/services-details" activeClassName="active">
+                                                    <a onClick={toggleNavbar} className="nav-link">Products Details</a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <Link href="#">
+                                            <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
                                                 Services <i className="ri-arrow-down-s-line"></i>
                                             </a>
                                         </Link>
@@ -204,7 +189,6 @@ const NavbarStyleThree = () => {
                                                     <a onClick={toggleNavbar} className="nav-link">Services</a>
                                                 </Link>
                                             </li> 
-
                                             <li className="nav-item">
                                                 <Link href="/services-details" activeClassName="active">
                                                     <a onClick={toggleNavbar} className="nav-link">Services Details</a>
@@ -216,7 +200,7 @@ const NavbarStyleThree = () => {
                                     <li className="nav-item">
                                         <Link href="#">
                                             <a onClick={e => e.preventDefault()} className="dropdown-toggle nav-link">
-                                                Case Studies <i className="ri-arrow-down-s-line"></i>
+                                                Projects <i className="ri-arrow-down-s-line"></i>
                                             </a>
                                         </Link>
                                         <ul className="dropdown-menu">
@@ -252,7 +236,6 @@ const NavbarStyleThree = () => {
                                             </li> 
                                         </ul>
                                     </li>
-
                                     <li className="nav-item">
                                         <Link href="/contact" activeClassName="active">
                                             <a onClick={toggleNavbar} className="nav-link">Contact</a>
@@ -262,14 +245,14 @@ const NavbarStyleThree = () => {
                             </div>
 
                             <div className="others-options d-flex align-items-center">
-                                <div className="option-item">
+                                {/* <div className="option-item">
                                     <div className="search-box" onClick={handleToggleSearchModal}>
                                         <i className="ri-search-line"></i>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="option-item">
-                                    <a href="tel:15143125678" className="default-btn rounded-pill">
-                                        +1 (514) 312-5678
+                                    <a href="tel:15143125678" className="default-btn">
+                                        +6285899731884
                                     </a>
                                 </div>
                             </div>

@@ -23,7 +23,7 @@ const options = {
 const SliderContent = [
     {
         subTitle: "NEED PROFESSIONAL",
-        title: "We work with all types of IT services according to the market demand",
+        title: "We provide solution for your manufacturing problems",
         contactBtnText: "Contact Us",
         contactBtnLink: "/contact",
         servicesBtnText: "Our Services",
@@ -32,7 +32,7 @@ const SliderContent = [
     },
     {
         subTitle: "NEED PROFESSIONAL",
-        title: "The right team to provide the best IT services",
+        title: "Empowering local products and boost national economy",
         contactBtnText: "Contact Us",
         contactBtnLink: "/contact",
         servicesBtnText: "Our Services",
@@ -41,7 +41,7 @@ const SliderContent = [
     },
     {
         subTitle: "NEED PROFESSIONAL",
-        title: "One-stop solution to all of your IT services and technology",
+        title: "One-stop solution to all of your technology",
         contactBtnText: "Contact Us",
         contactBtnLink: "/contact",
         servicesBtnText: "Our Services",
@@ -128,7 +128,7 @@ const HeroSlider = () => {
                 </ul> 
 
                 <div className={styles.heroSlidesEmail}>
-                    <a href="mailto:contact@biza.com">contact@biza.com</a>
+                    <a href="mailto:contact@biza.com">contact@e-manufaktur.id</a>
                 </div>
 
                 <div className={styles.heroSlidesTime}>

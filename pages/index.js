@@ -1,49 +1,43 @@
 import React from 'react';
-import NavbarStyleOne from '@/components/_App/NavbarStyleOne';
-import HeroSlider from '@/components/HomeOne/HeroSlider/HeroSlider';
-import AboutCompany from '@/components/HomeOne/AboutCompany/AboutCompany';
-import ServiceSlider from '@/components/Services/ServiceSliderStyle1/ServiceSlider';
-import WhyChooseUs from '@/components/HomeOne/WhyChooseUs/WhyChooseUs';
-import FunFact from '@/components/Common/FunFact/FunFact';
-import CaseStudiesSlider from '@/components/CaseStudies/CaseStudiesStyle1/CaseStudiesSlider';
-import HowCanWeHelp from '@/components/Common/HowCanWeHelp/HowCanWeHelp';
-import OurTeam from '@/components/Common/OurTeam/OurTeam';
-import AppointmentForm from '@/components/Appointment/AppointmentStyle1/AppointmentForm';
-import TestimonialSlider from '@/components/Common/Testimonials/TestimonialSlider';
-import PartnerSlider from '@/components/Common/Partners/PartnerSlider';
+import NavbarStyleTwo from '@/components/_App/NavbarStyleTwo';
+import HeroSlider from '@/components/HomeTwo/HeroSlider/HeroSlider';
+import ServiceSlider from '@/components/Services/ServiceSliderStyle2/ServiceSlider';
+import AboutCompany from '@/components/HomeTwo/AboutCompany/AboutCompany';
+import WhyChooseUs from '@/components/HomeTwo/WhyChooseUs/WhyChooseUs';
+import CaseStudies from '@/components/CaseStudies/CaseStudiesStyle2/CaseStudies';
+import PricingTable from '@/components/Pricing/PricingTable';
+import AppointmentForm from '@/components/Appointment/AppointmentStyle2/AppointmentForm';
+import TestimonialSlider from '@/components/Common/TestimonialsTwo/TestimonialSlider';
+import PartnerSlider from '@/components/Common/PartnersTwo/PartnerSlider';
 import OurBlog from '@/components/Common/OurBlog/OurBlog';
 import NewsletterForm from '@/components/Common/NewsletterForm/NewsletterForm';
 import Footer from '@/components/_App/Footer';
- 
-const IndexPage = () => {
+
+const IndexPage2 = () => {
     return (
         <>
-            <NavbarStyleOne />
+            <NavbarStyleTwo />
 
             <HeroSlider />
 
-            <AboutCompany />
-
             <ServiceSlider />
 
-            <WhyChooseUs /> 
+            <AboutCompany />
 
-            <FunFact />
+            <WhyChooseUs />
 
-            <CaseStudiesSlider />
-            
-            <div className="pb-100">
-                <HowCanWeHelp />
-            </div>
-            
-            <OurTeam />
+            <CaseStudies />
+
+            <PricingTable />
 
             <AppointmentForm />
 
             <TestimonialSlider />
 
-            <PartnerSlider />
-
+            <div className="ptb-100 border-top border-bottom">
+                <PartnerSlider />
+            </div>
+  
             <OurBlog />
 
             <NewsletterForm />
@@ -53,4 +47,4 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage;
+export default IndexPage2;
