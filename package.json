@@ -1,16 +1,17 @@
 {
-    "name": "biza",
+    "name": "e-manufaktur",
     "version": "1.0.0",
-    "description": "React Next.js IT Solutions & Services Template",
+    "description": "E-Manufaktur",
     "main": "index.js",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "export": "next export",
         "start": "next start",
+        "postbuild": "next-sitemap",
         "lint": "next lint"
     },
-    "author": "envytheme.com",
+    "author": "e-manufaktur.id",
     "license": "ISC",
     "dependencies": {
         "axios": "^0.21.4",
