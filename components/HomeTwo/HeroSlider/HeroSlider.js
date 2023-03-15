@@ -28,7 +28,7 @@ const SliderContent = [
         contactBtnLink: "/contact",
         servicesBtnText: "Our Services",
         servicesBtnLink: "/services",
-        bgImage: "/images/hero-slides/slides-bg-1.jpg"
+        bgImage: "/images/hero-slides/slides-bg-1.jpeg"
     },
     {
         subTitle: "NEED PROFESSIONAL",
